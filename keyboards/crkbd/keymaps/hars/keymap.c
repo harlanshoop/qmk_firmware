@@ -6,7 +6,7 @@
 */
 
 #include QMK_KEYBOARD_H
-#include "quantum/tap_dance.h"
+#include "process_tap_dance.h"
 
 // Define layers
 #define Alpha   0
@@ -45,7 +45,7 @@ enum {
   TD_SEMI_COLON,
 };
 
-qk_tap_dance_action_t tap_dance_actions[] = {
+tap_dance_action_t tap_dance_actions[] = {
   [TD_SEMI_COLON] = ACTION_TAP_DANCE_DOUBLE(KC_COLN,KC_SCLN),
 };
 
